@@ -1,0 +1,10 @@
+automations:
+  - title: Codex Work Watch
+    task_id: codex-work-watch
+    timing_mode: condition_watch
+    timezone: Asia/Shanghai
+    cadence: hourly
+    prompt_file: prompts/codex-work-watch.zh-CN.md
+
+# Reference only.
+# Runtime automation remains independent from this repository.
