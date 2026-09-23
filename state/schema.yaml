@@ -1,0 +1,22 @@
+schema_version: 1
+
+cursors:
+  overall: null
+  quota_model_reset: null
+  reset_specific: null
+
+reset:
+  type: null
+  scope: []
+  stage: null
+  source: null
+
+models:
+  shipped: []
+  watching: []
+
+clusters:
+  notified: []
+  active: []
+
+last_checked: null
