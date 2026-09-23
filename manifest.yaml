@@ -1,0 +1,27 @@
+schema_version: 1
+release_version: 0.1.0
+project:
+  name: codex-work-watch
+  purpose: "High-signal monitoring workflow for Codex and ChatGPT Work changes."
+  mode: condition_watch
+
+sources:
+  - OpenAI Status
+  - OpenAI Help
+  - Codex releases
+  - OpenAI developer documentation
+  - Tibo public updates
+  - GitHub issue evidence
+
+tasks:
+  - id: codex-work-watch
+    prompt: prompts/codex-work-watch.zh-CN.md
+    schedule:
+      timezone: Asia/Shanghai
+      cadence: hourly
+    guarantees:
+      - silent_unless_threshold_met
+      - source_priority_enforced
+      - cursor_monotonicity
+      - lifecycle_stage_tracking
+      - scope_aware_alerting
