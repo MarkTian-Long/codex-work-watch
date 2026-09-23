@@ -1,0 +1,16 @@
+# codex-work-watch
+
+Agent entrypoint for monitoring Codex and ChatGPT Work changes.
+
+Read order:
+1. manifest.yaml
+2. AGENTS.md
+3. prompts/codex-work-watch.zh-CN.md
+4. policies/*
+5. state/schema.yaml
+
+Purpose:
+High-signal monitoring of availability, routing, credits, usage limits, releases and reset lifecycle.
+
+Default behavior:
+Silent unless notification thresholds are met.
