@@ -1,0 +1,14 @@
+cursors:
+  overall: null
+  quota_model_reset: null
+  reset_specific: null
+
+reset:
+  type: null
+  stage: null
+
+clusters:
+  active: []
+  notified: []
+
+last_checked: null
