@@ -13,5 +13,8 @@ When invoked:
 2. Load monitoring prompt.
 3. Apply evidence policies.
 4. Notify only when thresholds are reached.
+5. Translate technical evidence into user-impact language before presenting the alert.
 
 Never produce routine status noise.
+
+Keep low-level technical evidence available for verification, but do not make it the default user-facing narrative.
