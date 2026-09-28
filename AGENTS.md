@@ -5,6 +5,7 @@
 1. Read `manifest.yaml`.
 2. Read the selected prompt completely.
 3. Respect evidence policies before producing notifications.
+4. Apply `policies/user-facing-output.md` before presenting any notification.
 
 ## Rules
 
@@ -15,6 +16,7 @@
 - Do not infer root causes without official confirmation.
 - Maintain monotonic cursors.
 - Third-party trackers are for discovery only.
+- Keep technical depth inside the evidence process; present user impact first.
 
 ## Notification philosophy
 
@@ -26,6 +28,8 @@ A notification requires one of:
 - stable/service shipped;
 - rollback or restore;
 - lifecycle stage upgrade.
+
+When a notification is triggered, explain what changed and what the user should expect before exposing implementation detail.
 
 ## Source priority
 
